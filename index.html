@@ -8,8 +8,16 @@
         <h1>
             melvin
         </h1>
-        <button>Click me</button>
-
+        <button id="demo" onclick="myFunction()"></button>
+        <audio controls>
+            <source src="horse.ogg" type="audio/ogg">
+            <source src="horse.mp3" type="audio/mpeg">
+            </audio>
     </body>
+    <script>
+        function myFunction() {
+          document.getElementById("demo").style.color = "red";
+        }
+        </script>
 </html>
 
