@@ -9,7 +9,15 @@
             autoclicker
         </h1>
             
-            
+        <button type="button" class="start" data-inc="1">By 1</button>
+        <button type="button" class="start" data-inc="10">By 10</button>
+        <button type="button" class="speed" data-speed="1000">One a sec</button>
+        <button type="button" class="speed" data-speed="500">Two a sec</button>
+        <button type="button" id="stop">Stop</button>
+        <div>
+          number: <span id="number">0</span>
+          
+        </div>
     </body>
     <script>
        var number = 0,
@@ -44,6 +52,7 @@ window.addEventListener("load", function() { // when page has loaded
   });
 
 });
+
       
 
         </script>
