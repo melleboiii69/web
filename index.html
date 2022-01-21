@@ -8,23 +8,17 @@
         <h1>
             melvin
         </h1>
-        <button id="demo" onclick="myFunction()" >Don't click me</button>
-        <audio controls autoplay >
+        <button id="demo" onclick="play()" >Don't click me</button>
+        <audio id="audio" controls hidden >
             <source src="rickashley.mp3" type="audio/mpeg" >
             </audio>
     </body>
     <script>
-        var audio = new Audio("rickashley.mp3");
+       function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+      }
 
-audio.oncanplaythrough = function(){
-audio.play();
-}
-
-audio.loop = true;
-
-audio.onended = function(){
-audio.play();
-}
         </script>
 </html>
 
