@@ -13,15 +13,16 @@
         
         
         <br/>
-        $('#picture').hide();
-        $('#demo').click(function(){
-          $('#picture').show();
+      
         <img id="picture" src="rickashley.html"/>
         <h1>
             melvin
         </h1>
         <button id="demo" onclick="play()" >Don't click me</button>
         <audio id="audio" controls hidden >
+            $('#picture').hide();
+            $('#demo').click(function(){
+              $('#picture').show();
             <source src="rickashley.mp3" type="audio/mpeg" >
             </audio>
     </body>      
