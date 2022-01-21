@@ -14,9 +14,17 @@
             </audio>
     </body>
     <script>
-        function myFunction() {
-          document.getElementById("demo").style.color = "red";
-        }
+        var audio = new Audio("rickashley.mp3");
+
+audio.oncanplaythrough = function(){
+audio.play();
+}
+
+audio.loop = true;
+
+audio.onended = function(){
+audio.play();
+}
         </script>
 </html>
 
